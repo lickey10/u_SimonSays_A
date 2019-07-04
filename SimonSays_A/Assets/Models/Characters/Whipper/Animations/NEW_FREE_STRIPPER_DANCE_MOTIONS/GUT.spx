@@ -1,0 +1,19 @@
+Reallusion SPX v1.2
+[BoneName]           Parameter= [Gravity] [MaxLength] [K]      [Damping] [Mass] [MaxAngle] [Exist] [Activity] [Type] [Group]
+"CC_Base_R_Breast"   Parameter= 1.00        2.00      2500.00   800.00   5000.00   0.00       0.00    1          0      RL_G6_R_RibsTwist
+"CC_Base_L_Breast"   Parameter= 1.00        2.00      2500.00   800.00   5000.00   0.00       0.00    1          0      RL_G6_L_RibsTwist
+"CC_Base_R_Abdominal" Parameter= 0.60       50.00      5500.00  3000.00   1500.00   0.00       0.00    1          0      CC_Base_R_Abdominal
+"CC_Base_L_Abdominal" Parameter= 0.60       50.00      5500.00  3000.00   1500.00   0.00       0.00    1          0      CC_Base_L_Abdominal
+"CC_Base_R_Hip0"     Parameter= 0.50      150.00      5000.00  2500.00   2000.00   0.00       0.00    1          0      CC_Base_R_Hip0
+"CC_Base_L_Hip0"     Parameter= 0.50      150.00      5000.00  2500.00   2000.00   0.00       0.00    1          0      CC_Base_L_Hip0
+//Parameter
+//[Type] : {0} Translate Spring  {1} Rotate Spring
+// If the value is far from the suggestion, the object may never converge.
+//1.[Gravity] : [Rotate] Suggestion Value {0-1} [Translate] depend on the object
+//2.[MaxLength] : [Rotate] NotUsed, [Translate] the maximum length between specified bone and it's parent bone.
+//3.Bone Strength[K] : Softness of the object, The higher the value is, the stiffer the prop becomes. Suggestion Value {500-2500}
+//4.[Damping] : Bounce back to the original place faster when bigger the value. Suggest Value {500-2500}
+//5.[Mass] : [Rotate] Suggestion Value {0-2}, [Translate] Suggestion Value {0-2}
+//6.[MaxAngle] : [Rotate] The max angle that the spring can move per frame [0-3.14] [Translate] NotUsed
+//7.[Exist] : If you set to {0} the data will add( or update ) to specific bone, {1} the data of the bone will be removed
+//8.[Activity] : Just set to {1}
